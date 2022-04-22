@@ -1,0 +1,41 @@
+- Why Machine Learning Pipelines?
+    -- Ability to Focus on New Models, Not maintaining existing models
+    -- Prevention of Bugs
+    -- Useful Paper Trail
+    -- Standardization
+    -- The business case for pipelines
+        --- Reduced costs of data sicence projects
+        --- Help detect potential biases in the datasets or in the trained
+            models
+        --- Create a paper trail to assist if questions arise around data
+            protection laws
+        --- free up development time for data scientists
+- ML Pipelines are only useful when there are key users of a model.
+    -- Experiments, paper reproduction, model architecture investigation are
+        not good reasons to have an ML Pipeline
+- Model Life Cycle
+    -- Data Validation
+        --- Common data validation tools will also allow you to compare
+            different datasets
+    -- Data Preprocessing
+        --- It's important that modifications of preprocessing steps can be
+            linked to the processed data and vice versa.
+        --- This means if someone modifies a processing sttep, the previous
+            training data should become invalid and force an update of the
+            entire pipeline.
+    -- Model Analysis
+        --- Automation will keep the analysis of the models consistent and
+            comparable against other analyses
+    -- Model Deployment
+        --- Modern model servers allow you to deploy your models without writing
+            web app code
+        --- Model servers also allow you to update a model version without
+            redeploying your model application, which reduces application
+            downtime and reduce communication between the application
+            development and the machine learning teams
+    -- Data Privacy
+        --- Eventually, privacy-preserving methods will be integrated into tools
+            for building machine learning pipelines
+        --- Federated Learning: raw data does not leave a user's device
+        --- Encrypted machine learning: entire training process can run in the
+            encrypted space or a model trained on raw data can be encrypted
